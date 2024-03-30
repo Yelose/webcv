@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curriculo de prueba</title>
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,63 +30,40 @@
         <div>
           <p><span>🗺️</span>Asturias - España</p>
           <p><span>📞</span>656 614 888</p>
-          <p><span>🐈‍⬛</span><a href="https://github.com/Yelose">GitHub</a></p>
+          <p><span>🐈‍⬛</span><a target="_blank" href="https://github.com/Yelose">GitHub</a></p>
           <p><span>📧</span> marina@yelose.dev</p>
-          <p><span>💻</span><a href="https://yelose.dev">Página web</a></p>
+          <p><span>💻</span><a target="_blank" href="https://yelose.dev">Página web</a></p>
         </div>
       </main>
       <footer>
         <h2>Menú</h2>
         <menu>
-          <div onclick="showSection('presentation')">
+          <div onclick="showSection('presentation', this)">
             <p>Carta de presentación</p>
           </div>
-          <div onclick="showSection('experience')">
+          <div onclick="showSection('experience', this)">
             <p>Experiencia Laboral</p>
           </div>
-          <div>
+          <div onclick="showSection('professional-profile', this)">
             <p>Perfil Profesional</p>
           </div>
-          <div onclick="showSection('courses')">
+          <div onclick="showSection('courses', this)">
             <p>Cursos</p>
           </div>
-          <div>
+          <div onclick="showSection('languages', this)">
             <p>Idiomas</p>
           </div>
-          <div>
+          <div onclick="showSection('soft-skills', this)">
             <p>Habilidades</p>
           </div>
         </menu>
       </footer>
     </aside>
-    <section id="presentation" class="show-section">
-      <h2>Carta de Presentación</h2>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est similique
-        explicabo id repellat tempore molestiae. Optio autem mollitia quo
-        sapiente ipsam consectetur molestias earum quis. Atque recusandae labore
-        enim animi.
-      </p>
-    </section>
-    <section id="experience">
-      <h2>Experiencia laboral</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
-        doloremque vero necessitatibus cupiditate temporibus laudantium harum
-        earum maxime, debitis, quas nobis accusantium molestias veritatis
-        obcaecati! Quasi quaerat corrupti at earum accusamus dolorem a illum,
-        omnis deserunt commodi! Eaque, reiciendis animi.
-      </p>
-    </section>
-    <section id="courses">
-      <h2>Cursos</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi qui
-        debitis molestiae saepe sit reprehenderit, ab quo rerum accusantium vel.
-        Ut, id recusandae quos doloremque soluta aut voluptatem! Nesciunt enim
-        cupiditate atque alias nihil iure illo excepturi esse, molestiae
-        adipisci!
-      </p>
-    </section>
+    <section id="presentation"></section>
+    <section id="experience"></section>
+    <section id="professional-profile"></section>
+    <section id="courses"></section>
+    <section id="languages"></section>
+    <section id="soft-skills"></section>
   </body>
 </html>

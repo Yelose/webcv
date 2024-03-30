@@ -1,6 +1,21 @@
 # My Web CV
 CV made with JavaScript vanilla, Sass, Html5
 
+## Using Sass
+
+- This project is using Sass, so you have to install the dependencies
+
+```
+npm install
+```
+
+- To watch sass changes use the following command
+
+```
+npm run sass-watch
+```
+
+
 ## Google Fonts
 
 ### Roboto Flex: CSS class for a variable style

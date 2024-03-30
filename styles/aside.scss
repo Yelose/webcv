@@ -1,0 +1,50 @@
+aside {
+  min-width: 300px;
+  position: relative;
+  height: 100%;
+  gap: 4vh;
+  background-color: blueviolet;
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.9);
+  a {
+    color: rgba(255, 255, 255, 0.9);
+    &:hover {
+      color: white;
+    }
+  }
+  header {
+    figure {
+      width: 180px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  main,
+  footer {
+    gap: 2vh;
+  }
+  footer > menu,
+  main > div {
+    gap: 1vh;
+  }
+  footer {
+    width: 100%;
+    menu {
+        width: 100%;
+        div{
+            width: 100%;
+            p{
+                width: 100%;
+                cursor: pointer;
+                color: white;
+            }
+        }
+    }
+  }
+}
+
+.active {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 3% 5%;
+}

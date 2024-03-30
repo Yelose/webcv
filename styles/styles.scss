@@ -1,0 +1,44 @@
+@import './text.scss';
+@import './shapes.scss';
+@import './sections.scss';
+@import './aside.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    max-width: 100%;
+}
+
+body {
+    display: flex;
+}
+
+aside,
+section,
+header,
+main,
+footer,
+menu,
+main > div,
+.show-section {
+    display: flex;
+    flex-direction: column;
+}
+
+aside,
+section {
+    padding: 3vh 2vw;
+}
+
+header {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+

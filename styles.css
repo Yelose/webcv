@@ -1,0 +1,145 @@
+h1 {
+  white-space: nowrap;
+  letter-spacing: -1px;
+}
+
+h3 {
+  font-family: "Foldit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+}
+
+p {
+  font-family: "Playpen Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bg-shape {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-shape:before {
+  content: "";
+  position: absolute;
+  width: 1700px;
+  height: 60vh;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  top: -30%;
+  right: 0;
+  z-index: -2;
+}
+
+.bg-shape:after {
+  content: "";
+  position: absolute;
+  width: 280%;
+  height: 70vh;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 40% 50% 30% 10%;
+  bottom: -50%;
+  left: 0;
+  z-index: -2;
+}
+
+body > section {
+  max-width: 100%;
+  overflow-y: auto;
+  gap: 3vh;
+  display: none;
+}
+
+aside {
+  min-width: 300px;
+  position: relative;
+  height: 100%;
+  gap: 4vh;
+  background-color: blueviolet;
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.9);
+}
+aside a {
+  color: rgba(255, 255, 255, 0.9);
+}
+aside a:hover {
+  color: white;
+}
+aside header figure {
+  width: 180px;
+}
+aside header figure img {
+  width: 100%;
+}
+aside main,
+aside footer {
+  gap: 2vh;
+}
+aside footer > menu,
+aside main > div {
+  gap: 1vh;
+}
+aside footer {
+  width: 100%;
+}
+aside footer menu {
+  width: 100%;
+}
+aside footer menu div {
+  width: 100%;
+}
+aside footer menu div p {
+  width: 100%;
+  cursor: pointer;
+  color: white;
+}
+
+.active {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 3% 5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  max-width: 100%;
+}
+
+body {
+  display: flex;
+}
+
+aside,
+section,
+header,
+main,
+footer,
+menu,
+main > div,
+.show-section {
+  display: flex;
+  flex-direction: column;
+}
+
+aside,
+section {
+  padding: 3vh 2vw;
+}
+
+header {
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */

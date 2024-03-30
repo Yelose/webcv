@@ -1,17 +1,19 @@
-function showSection(section) {
+function showSection(section, element) {
     clearSections()
-    document.getElementById(section).classList.add("show-section")
+    document.querySelectorAll('.active').forEach(item =>{
+        item.classList.remove('active')
+    })
+    element.classList.add("active")
+    
+    const sectionHtml = document.getElementById(section)
+    sectionHtml.classList.add("show-section")
+    fetch(`./pages/${section}.html`).then(res => res.text()).then(html => sectionHtml.innerHTML = html)
 }
 
 function clearSections() {
-    console.log("clearSection")
-    removeSection("presentation")
-    removeSection("experience")
-    removeSection("courses")
+    const sections = document.querySelectorAll('.show-section')
+    sections.forEach(section => {
+        section.classList.remove('show-section')
+    });
 }
-
-function removeSection(section) {
-    console.log("removeSection")
-    const sectionHtml = document.getElementById(section)
-    sectionHtml.classList.remove("show-section")
-}
+showSection('presentation')
